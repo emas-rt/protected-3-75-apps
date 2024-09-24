@@ -2,7 +2,6 @@ query ExampleQuery {
   company {
     ceo
     coo
-    cto
   }
   roadster {
     apoapsis_au
