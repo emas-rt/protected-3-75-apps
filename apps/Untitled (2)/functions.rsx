@@ -1,8 +1,10 @@
 <GlobalFunctions>
-  <RESTQuery
+  <GraphQLQuery
     id="query1"
-    allowedGroupIds={[5]}
-    allowedGroups={["groupA"]}
-    resourceName="REST-WithoutResource"
+    allowedGroupIds={[6, 1]}
+    allowedGroups={["groupB", "admin"]}
+    body={include("./lib/query1.gql", "string")}
+    resourceName="GraphQL-WithoutResource"
+    resourceTypeOverride=""
   />
 </GlobalFunctions>
